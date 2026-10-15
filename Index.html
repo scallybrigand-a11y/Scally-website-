@@ -1,0 +1,131 @@
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+  document.querySelectorAll("a").forEach(function (link) {
+    if (link.textContent.trim().toLowerCase() === "home") {
+      link.href = "#home";
+    }
+  });
+});
+</script>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#0b0b0b">
+  <meta name="description" content="Discover bold streetwear from SCALLY.">
+  <title>SCALLY | Streetwear</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <a class="logo" href="index.html">SCALLY<span>.</span></a>
+    <p>OWN YOUR STYLE. STAY ORIGINAL.</p>
+    <nav>
+      <a href="index.html">HOME</a>
+      <a href="#drops">DROPS</a>
+      <a href="#about">ABOUT</a>
+      <a href="#drops">SHOP ↗</a>
+    </nav>
+  </header>
+
+  <main>
+    <p class="eyebrow">SCALLY STREETWEAR / EST. 2026</p>
+    <h2>NOT MADE TO<br>BLEND IN.</h2>
+    <p>Streetwear for those who create their own lane.</p>
+    <a class="btn" href="#drops">EXPLORE THE DROPS ↗</a>
+  </main>
+
+  <section id="drops">
+    <h2 class="section-title">THE LATEST <span>DROPS.</span></h2>
+
+<div class="products">
+
+  <!-- T-SHIRT -->
+  <article class="product-card">
+    <div class="product-art">SCALLY<br>TEE</div>
+
+    <label class="btn photo-button">
+      ADD T-SHIRT PHOTO
+      <input type="file" accept="image/*" hidden
+        onchange="previewProductPhoto(this, 'tee-photo')">
+    </label>
+
+    <img id="tee-photo" class="product-photo" alt="SCALLY T-shirt" hidden>
+
+    <h3>Classic SCALLY Tee</h3>
+    <p>Everyday streetwear essential.</p>
+    <p class="price">KSh 1,000</p>
+    <button onclick="orderProduct('Classic SCALLY Tee','1000')">
+      ORDER ON WHATSAPP ↗
+    </button>
+  </article>
+
+  <!-- HOODIE -->
+  <article class="product-card">
+    <div class="product-art">SCALLY<br>HOODIE</div>
+
+    <label class="btn photo-button">
+      ADD HOODIE PHOTO
+      <input type="file" accept="image/*" hidden
+        onchange="previewProductPhoto(this, 'hoodie-photo')">
+    </label>
+
+    <img id="hoodie-photo" class="product-photo" alt="SCALLY Hoodie" hidden>
+
+    <h3>Street Hoodie</h3>
+    <p>Comfort with an urban edge.</p>
+    <p class="price">KSh 2,500</p>
+    <button onclick="orderProduct('Street Hoodie','2500')">
+      ORDER ON WHATSAPP ↗
+    </button>
+  </article>
+
+  <!-- CROP TOP -->
+  <article class="product-card">
+    <div class="product-art">SCALLY<br>CROP TOP</div>
+
+    <label class="btn photo-button">
+      ADD CROP TOP PHOTO
+      <input type="file" accept="image/*" hidden
+        onchange="previewProductPhoto(this, 'crop-photo')">
+    </label>
+
+    <img id="crop-photo" class="product-photo" alt="SCALLY Crop Top" hidden>
+
+    <h3>SCALLY Crop Top</h3>
+    <p>Simple, bold, and confident.</p>
+    <p class="price">KSh 800</p>
+    <button onclick="orderProduct('SCALLY Crop Top','800')">
+      ORDER ON WHATSAPP ↗
+    </button>
+  </article>
+
+</div>
+
+  </section>
+
+  <section class="about" id="about">
+    <h2 class="section-title">MORE THAN <span>CLOTHES.</span></h2>
+    <p>SCALLY is about confidence, individuality, and moving in your own direction. Wear what represents you. Own your style. Stay original.</p>
+  </section>
+
+  <footer>
+    <p><strong>SCALLY.</strong> OWN YOUR STYLE. STAY ORIGINAL.</p>
+    <p>© 2026 SCALLY. ALL RIGHTS RESERVED.</p>
+  </footer>
+
+  <script src="script.js"></script>
+<script src="script.js"></script></body>
+</html>
+
+
+        
+          
+  
+        
+
+      
+          
+  
